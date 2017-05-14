@@ -8,6 +8,9 @@ import webbrowser
 
 class Movie():
 
+	# - Initialize Movie instance
+	# - Input: title, storyline, poster_image_url, trailer_youtube_url
+	
 	def __init__(self, title, storyline, poster_image_url, trailer_youtube_url):
 		self.title = title
 		self.storyline = storyline
