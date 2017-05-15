@@ -1,7 +1,10 @@
+# -*- coding:utf-8 -*-
 
 """
 - Author: Xiao Liu
-- Write a movie class: properties of a movie such as movie titles, box art, poster images, and movie trailer URLs, and number of views(additional)
+- Write a movie class: properties of a movie 
+- Include movie titles, box art, poster images, and movie trailer URLs, 
+	and number of views(additional)
 """
 
 import webbrowser
@@ -25,9 +28,17 @@ class Movie():
         self.num_views = ""
 
     def show_trailer(self):
+    	"""
+			open a web window, connect to trailer youtube url
+    	"""
         webbrowser.open(self.trailer_youtube_url)
 
     def get_number_views(self):
+    	"""
+			Crawl movie trailer youtube page
+			Parse view count using BeautifulSoup
+    	"""
         response = urllib2.urlopen(self.trailer_youtube_url)
         soup = BeautifulSoup(response.read(), "html.parser")
-        return soup.find('div', class_="watch-view-count").get_text()
+        view_count = soup.find('div', class_="watch-view-count").get_text()
+        return view_count.encode('utf-8').strip()
