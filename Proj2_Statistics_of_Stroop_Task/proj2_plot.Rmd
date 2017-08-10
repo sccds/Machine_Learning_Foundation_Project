@@ -1,0 +1,62 @@
+---
+title: "udacity_proj2"
+author: "Xiao Liu"
+date: "8/10/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+data = read.csv("/Users/xliu/Documents/Udacity_Machine_Learning_Foundation_Project/Proj2_Statistics_of_Stroop_Task/stroopdata.csv")
+```
+
+```{r}
+setwd("./")
+
+plot(data$Congruent, 
+     xlim = c(0, 25),
+     pch = 21,
+     bg = "yellow",
+     main = "Congruent Sample",
+     xlab = "Participant",
+     ylab = "Time Usage"
+     )
+abline(h=mean(data$Congruent), col="blue")
+jpeg(file="congruent.jpeg")
+dev.off()
+
+plot(data$Incongruent, 
+     xlim = c(0, 25),
+     pch = 21,
+     bg = "orange",
+     main = "Incongruent Sample",
+     xlab = "Participant",
+     ylab = "Time Usage"
+     )
+abline(h=mean(data$Incongruent), col="blue")
+jpeg(file="incongruent.jpeg")
+dev.off()
+
+barplot(t(as.matrix(data)),
+        beside = TRUE,
+        col = c("yellow", "orange")
+        )
+axis(1, seq(2, 72, by=3), labels = 1:24, tick = FALSE)
+jpeg(file="barplot.jpeg")
+dev.off()
+
+boxplot(data$Congruent, 
+        data$Incongruent, 
+        names = c("Congruent", "Incongruent"),
+        col = c("yellow", "orange"),
+        xlab = seq(1,24)
+        )
+jpeg(file="boxplot.jpeg")
+dev.off()
+
+```
+
+
