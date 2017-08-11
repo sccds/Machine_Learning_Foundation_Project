@@ -3,7 +3,8 @@
 
 ```
 Author: Xiao Liu
-Time: 08/10/2017
+Created: 08/10/2017
+LatestModify: 08/11/2017
 ```
 
 ## Background Information
