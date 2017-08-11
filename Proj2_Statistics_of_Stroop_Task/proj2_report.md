@@ -18,27 +18,38 @@ Dependent t-test for two conditions paired samples
 
 ### What is independent variable?
 
-Two conditions: **congruent words** and **incongruent words**
+The independent variable is whether the words shown are **congruent** with the ink colors or if they are **incongruent** with ink colors.
 
 ### What is dependent variable?
 
-The time people take to name ink colors in equally-sized lists
+The dependent variable is the amount of time it takes to name, out loud, the color of the inks in which the words are displayed.
 
-### Test hypothesis -- null typothesis
-The time used to reading list of incongruent words has no abvious longer than reading congruent words list
+### Test hypothesis -- null hypothesis
+
+`$\mu_c$` is the sample mean of  the time spent naming the words in congruent test
+
+`$\mu = \frac{\sum{x_i}}{n}$`
+
+`$\mu_i$` is the sample mean of  the time spent naming the words in incongruent test
+
+Null hypothesis: the time used to reading list of incongruent words has no abvious longer than reading congruent words list
 
 `$H_0: \mu_c \geq \mu_i$`
 
 ### Test hypothesis -- alternative typothesis
-The time used to read list of incongruent words will be larger than the time in congruent words list
+Alternative hypothesis: the time used to read list of incongruent words will be larger than the time in congruent words list
 
 ``$H_A: \mu_c < \mu_i$``
 
 ### t-test
+Since z-test works when we know population `$\mu$` and `$\sigma$`. In this case, we have less than 30 samples, and we don't know the population's standard deviation. We will use t-test.
+
+We should assume that the distributions are Gaussian.
+
 Based on the alternative hypothesis, t-test will be `one-tailed test in positive direction`
 
 Find the t-critical values for a one-tailed test at `$\alpha=0.05$`:  
-`$t_{critical} = 1.711$`
+`$t_{critical} = 1.714$`
 
 
 ### Data at a glance

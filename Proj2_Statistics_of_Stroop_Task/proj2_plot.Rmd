@@ -25,8 +25,7 @@ plot(data$Congruent,
      ylab = "Time Usage"
      )
 abline(h=mean(data$Congruent), col="blue")
-jpeg(file="congruent.jpeg")
-dev.off()
+
 
 plot(data$Incongruent, 
      xlim = c(0, 25),
@@ -37,26 +36,20 @@ plot(data$Incongruent,
      ylab = "Time Usage"
      )
 abline(h=mean(data$Incongruent), col="blue")
-jpeg(file="incongruent.jpeg")
-dev.off()
+
 
 barplot(t(as.matrix(data)),
         beside = TRUE,
         col = c("yellow", "orange")
         )
 axis(1, seq(2, 72, by=3), labels = 1:24, tick = FALSE)
-jpeg(file="barplot.jpeg")
-dev.off()
+
 
 boxplot(data$Congruent, 
         data$Incongruent, 
         names = c("Congruent", "Incongruent"),
-        col = c("yellow", "orange"),
-        xlab = seq(1,24)
+        col = c("yellow", "orange")
         )
-jpeg(file="boxplot.jpeg")
-dev.off()
-
 ```
 
 
