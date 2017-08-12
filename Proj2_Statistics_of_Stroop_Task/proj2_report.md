@@ -27,15 +27,15 @@ The dependent variable is the amount of time it takes to name, out loud, the col
 
 ### Test hypothesis -- null hypothesis
 
-`$\mu_c$` is the sample mean of  the time spent naming the words in congruent test
-
 `$\mu = \frac{\sum{x_i}}{n}$`
+
+`$\mu_c$` is the sample mean of  the time spent naming the words in congruent test
 
 `$\mu_i$` is the sample mean of  the time spent naming the words in incongruent test
 
-Null hypothesis: the time used to reading list of incongruent words has no abvious longer than reading congruent words list
+Null hypothesis: there is no difference in population means of response time under incongruent and congruent scenarios
 
-`$H_0: \mu_c \geq \mu_i$`
+`$H_0: \mu_c = \mu_i$`
 
 ### Test hypothesis -- alternative typothesis
 Alternative hypothesis: the time used to read list of incongruent words will be larger than the time in congruent words list
@@ -75,15 +75,17 @@ mean of difference between two conditions:
 standard deviation of difference:  
 `$S_D = \sqrt{\frac{\sum{(D_{i} - \bar{D})^2}}{n - 1}} = 4.86$`
 
-standard error of mean:  
+standard error:  
 `$SEM = \frac{S_D}{\sqrt{n}} = 0.99$`
 
 t-statistic:  
 `$t_{statistic} = \frac{M_D}{SEM} = 8.04$`
 
+`$SE = \frac{\sqrt{S_1^2 + S_2^2}}{\sqrt{n}} = \sqrt{\frac{S_1^2}{n} + \frac{S_2^2}{n}} = 1.22$`
+
 95% confident interval for the mean difference:  
 
-`$CI: M_D \pm t_{critical} \times (SEM) = (6.27, 9.65)$`
+`$CI: M_D \pm t_{critical} \times SE = (5.87, 10.05)$`
 
 
 
