@@ -29,9 +29,11 @@ The dependent variable is the amount of time it takes to name, out loud, the col
 
 `$\mu = \frac{\sum{x_i}}{n}$`
 
-`$\mu_c$` is the sample mean of  the time spent naming the words in congruent test
+`$\mu_c$` is the population mean of the time spent naming the words in congruent test
 
-`$\mu_i$` is the sample mean of  the time spent naming the words in incongruent test
+`$\mu_i$` is the population mean of  the time spent naming the words in incongruent test
+
+We are using the sample data make inferences about the population 
 
 Null hypothesis: there is no difference in population means of response time under incongruent and congruent scenarios
 
@@ -65,9 +67,9 @@ Find the t-critical values for a one-tailed test at `$\alpha=0.05$`:
 
 `$df = n-1 = 23$`
 
-`$\mu_c = 14.05; \sigma_c = 3.56$`
+`$\bar{x_c} = 14.05$`
 
-`$\mu_i = 22.02; \sigma_i = 4.80$`
+`$\bar{x_i} = 22.02$`
 
 mean of difference between two conditions:  
 `$M_D = 7.96$`
